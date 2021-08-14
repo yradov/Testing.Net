@@ -11,12 +11,11 @@ namespace SimpleApp.Models
         public decimal? Price { get; set; }
         public static Product[] GetProducts()
         {
-            Product kayak = new()
-            { Name = "Kayak", Price = 275M };
+            Product kayak = new() { Name = "Kayak", Price = 275M };
 
             Product lifejacket = new() { Name = "Lifejacket", Price = 48.95M };
 
             return new Product[] { kayak, lifejacket };
         }
-    }
+    } 
 }
