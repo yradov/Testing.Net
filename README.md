@@ -14,5 +14,5 @@ dotnet new xunit -o SimpleApp.Tests --framework net5.0
 dotnet sln add SimpleApp.Tests
 dotnet add SimpleApp.Tests reference SimpleApp
 
-
+dotnet add SimpleApp.Tests package Moq --version 4.16.1
 
