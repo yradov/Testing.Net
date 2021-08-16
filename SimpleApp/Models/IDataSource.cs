@@ -5,9 +5,8 @@ using System.Threading.Tasks;
 
 namespace SimpleApp.Models
 {
-    public class Product
+    public interface IDataSource
     {
-        public string Name { get; set; }
-        public decimal? Price { get; set; }
-    } 
+        IEnumerable<Product> Products { get; }
+    }
 }
